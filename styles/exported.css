@@ -11280,5 +11280,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.img-size {
+  width: 15rem;
+}
+
+.nav-font-size {
+  font-size: 22px;
+}
 
 /*# sourceMappingURL=exported.css.map */

@@ -1,5 +1,6 @@
 $primary: #5265E1;
 $danger: #FA5959;
+$nav-font-size: 22px;
 
 $theme-colors: (
   "primary": $primary,
@@ -8,4 +9,12 @@ $theme-colors: (
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+.img-size {
+  width: 15rem;
+}
+
+.nav-font-size {
+  font-size: $nav-font-size;
+}
 
