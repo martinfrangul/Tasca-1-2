@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link href="styles/exported.css" rel="stylesheet" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -40,11 +44,11 @@
         </div>
       </nav>
     </div>
-    <div class="container-fluid main-container mt-5">
+    <div class="container-fluid main-container mt-5 pb-5">
       <div class="row gap-5">
         <div
           class="col d-flex justify-content-center flex-column"
-          style="padding: 8rem"
+          style="padding: 6rem"
         >
           <h1 class="slogan">
             A Simple Bookmark <br />
@@ -81,5 +85,94 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid w-75 d-flex align-items-center flex-column gap-3 pt-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="features-title">Features</h2>
+        </div>
+      </div>
+      <div class="row w-50 fs-4">
+        <div class="col container-fluid justify-content-center ">
+          <p class="features-content text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur, temporibus aperiam? Veritatis laborum magni, aperiam
+            optio eligendi ullam cum error sequi totam cupiditate sapiente
+            dolores? Corrupti rerum quae impedit cum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVS TABS -->
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          Simple Bookmarking
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          Speedy Searching
+        </button>
+        <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false"
+        >
+          Easy Sharing
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-contact"
+        role="tabpanel"
+        aria-labelledby="nav-contact-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+    </div>
   </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>
