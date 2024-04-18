@@ -11300,17 +11300,14 @@ body {
   font-size: 22px;
 }
 
-.slogan-container {
-  max-width: 40rem;
-}
-
 .slogan {
   font-size: 4rem;
   font-weight: bold;
 }
 
-.slogan-paragraph {
+.slogan-text {
   font-size: 1.5rem;
+  max-width: 40rem;
 }
 
 .features-title {
