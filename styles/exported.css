@@ -11280,12 +11280,37 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.img-size {
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.logo-size {
   width: 15rem;
+}
+
+.hero-size {
+  width: 50rem;
+}
+
+.main-container {
+  max-width: 85%;
 }
 
 .nav-font-size {
   font-size: 22px;
+}
+
+.slogan-container {
+  max-width: 40rem;
+}
+
+.slogan {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.slogan-paragraph {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=exported.css.map */
