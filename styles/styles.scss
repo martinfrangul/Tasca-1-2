@@ -1,11 +1,20 @@
 $primary: #5265E1;
 $danger: #FA5959;
 $nav-font-size: 22px;
+$faet-tab-color: red;
 
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
 );
+
+@mixin text-sections-content {
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+
+// $nav-link-hover-color: $primary-color;
+// $nav-link-disabled-color: $light-color;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -36,10 +45,22 @@ body {
 }
 
 .slogan-text {
-  font-size: 1.5rem;
-  max-width: 40rem;
+  @include text-sections-content;
 }
 
-.features-title {
+.features-section-title {
+  font-weight: bold;
+}
+
+.features-text-content {
+  @include text-sections-content;
+}
+
+.feat-tab-img {
+  height: 32rem;
+}
+
+.features-text-title {
+  font-size: 2rem;
   font-weight: bold;
 }

@@ -11310,7 +11310,21 @@ body {
   max-width: 40rem;
 }
 
-.features-title {
+.features-section-title {
+  font-weight: bold;
+}
+
+.features-text-content {
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+
+.feat-tab-img {
+  height: 32rem;
+}
+
+.features-text-title {
+  font-size: 2rem;
   font-weight: bold;
 }
 
