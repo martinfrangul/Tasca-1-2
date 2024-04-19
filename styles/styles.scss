@@ -1,7 +1,10 @@
 $primary: #5265E1;
 $danger: #FA5959;
 $nav-font-size: 22px;
-$faet-tab-color: red;
+$selected-tab-color: #000; 
+$unselected-tab-color: #585757; 
+
+
 
 $theme-colors: (
   "primary": $primary,
@@ -63,4 +66,12 @@ body {
 .features-text-title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.nav-link.active {
+  color: $selected-tab-color;
+}
+
+.nav-link:not(.active) {
+  color: $unselected-tab-color;
 }

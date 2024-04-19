@@ -11328,4 +11328,12 @@ body {
   font-weight: bold;
 }
 
+.nav-link.active {
+  color: #000;
+}
+
+.nav-link:not(.active) {
+  color: #585757;
+}
+
 /*# sourceMappingURL=exported.css.map */
