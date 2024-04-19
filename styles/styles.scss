@@ -1,9 +1,10 @@
 $primary: #5265E1;
 $danger: #FA5959;
-$nav-font-size: 22px;
+$nav-font-size: 0.8rem;
 $selected-tab-color: #000; 
 $unselected-tab-color: #585757; 
-
+$border-color: red;
+$border-width: 2px;
 
 
 $theme-colors: (
@@ -11,10 +12,6 @@ $theme-colors: (
   "danger": $danger,
 );
 
-@mixin text-sections-content {
-  font-size: 1.5rem;
-  max-width: 40rem;
-}
 
 // $nav-link-hover-color: $primary-color;
 // $nav-link-disabled-color: $light-color;
@@ -27,11 +24,11 @@ body {
 }
 
 .logo-size {
-  width: 15rem;
+  width: 10rem;
 }
 
 .hero-size {
-  width: 58rem;
+  width: 41rem;
 }
 
 .main-container {
@@ -43,12 +40,17 @@ body {
 }
 
 .slogan {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
+.slogan-container {
+  width: 100%
+}
+
 .slogan-text {
-  @include text-sections-content;
+  font-size: 1.1rem;
+
 }
 
 .features-section-title {
@@ -56,7 +58,8 @@ body {
 }
 
 .features-text-content {
-  @include text-sections-content;
+  font-size: 1.1rem;
+
 }
 
 .feat-tab-img {
@@ -68,10 +71,5 @@ body {
   font-weight: bold;
 }
 
-.nav-link.active {
-  color: $selected-tab-color;
-}
 
-.nav-link:not(.active) {
-  color: $unselected-tab-color;
-}
+
