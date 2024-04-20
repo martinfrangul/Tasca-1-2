@@ -1,26 +1,26 @@
-$primary: #5265E1;
-$danger: #FA5959;
+$primary: #5265e1;
+$danger: #fa5959;
 $nav-font-size: 0.8rem;
-$selected-tab-color: #000; 
-$unselected-tab-color: #585757; 
+$selected-tab-color: #000;
+$unselected-tab-color: #585757;
+$tab-color-hover: #333232;
 $border-color: red;
 $border-width: 2px;
-
+$main-container-size: 77rem;
 
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
 );
 
-
 // $nav-link-hover-color: $primary-color;
 // $nav-link-disabled-color: $light-color;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .logo-size {
@@ -32,7 +32,7 @@ body {
 }
 
 .main-container {
-  max-width: 77rem;
+  max-width: $main-container-size;
 }
 
 .nav-font-size {
@@ -45,12 +45,11 @@ body {
 }
 
 .slogan-container {
-  width: 100%
+  width: 100%;
 }
 
 .slogan-text {
   font-size: 1.1rem;
-
 }
 
 .features-section-title {
@@ -59,11 +58,10 @@ body {
 
 .features-text-content {
   font-size: 1.1rem;
-
 }
 
 .feat-tab-img {
-  height: 32rem;
+  height: 23rem;
 }
 
 .features-text-title {
@@ -71,5 +69,11 @@ body {
   font-weight: bold;
 }
 
+.nav-link.active {
+  color: $selected-tab-color;
+}
 
-
+// Estilo para las pestañas no seleccionadas
+.nav-link:not(.active) {
+  color: $unselected-tab-color;
+}

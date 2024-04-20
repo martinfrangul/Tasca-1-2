@@ -12,8 +12,10 @@
   </head>
 
   <body>
+    <!-- SECCIÓN 1 -->
+
     <div class="container-fluid d-flex justify-content-center">
-      <nav class="navbar navbar-expand-lg bg-body py-5" style="width: 77rem">
+      <nav class="navbar navbar-expand-lg bg-body main-container w-100 py-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -82,15 +84,18 @@
         </div>
       </div>
     </div>
+
+    <!-- SECCIÓN 2 -->
+
     <div
-      class="container-fluid w-75 d-flex align-items-center flex-column gap-4 pt-5 mb-5"
+      class="container-fluid main-container d-flex align-items-center flex-column gap-4 pt-5 mb-5"
     >
       <div class="row">
         <div class="col">
           <h2 class="features-section-title fs-1">Features</h2>
         </div>
       </div>
-      <div class="row w-50 fs-4">
+      <div class="row w-75 fs-5">
         <div class="col container-fluid justify-content-center">
           <p class="fs-4 text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -112,7 +117,7 @@
             role="tablist"
           >
             <button
-              class="nav-link active px-5"
+              class="nav-link active px-4 mx-4"
               id="msg-1-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-1"
@@ -121,10 +126,10 @@
               aria-controls="msg-1-tab"
               aria-selected="true"
             >
-              <h3 class="fs-2">Simple Bookmarking</h3>
+              <h3 class="fs-4">Simple Bookmarking</h3>
             </button>
             <button
-              class="nav-link px-5"
+              class="nav-link px-4 mx-4"
               id="msg-2-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-2"
@@ -133,10 +138,10 @@
               aria-controls="msg-2-tab"
               aria-selected="false"
             >
-              <h3 class="fs-2">Search Speeding</h3>
+              <h3 class="fs-4">Search Speeding</h3>
             </button>
             <button
-              class="nav-link px-5"
+              class="nav-link px-4 mx-4"
               id="msg-3-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-3"
@@ -145,7 +150,7 @@
               aria-controls="msg-3-tab"
               aria-selected="false"
             >
-              <h3 class="fs-2">Easy Sharing</h3>
+              <h3 class="fs-4">Easy Sharing</h3>
             </button>
           </div>
         </nav>
@@ -173,14 +178,10 @@
               aria-labelledby="msg-1-tab"
               tabindex="0"
             >
-              <h1 class="features-text-title pb-3">
-                A Simple Bookmark Manager
-              </h1>
+              <h1 class="features-text-title pb-3">Bookmark in one click</h1>
               <div class="features-text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente velit dolor, repellat cum vero dolores officiis?
-                Excepturi recusandae id cum nulla consectetur, incidunt omnis
-                velit ipsa dolorum ex, corporis odio?
+                Even if your mouse has only ONE button, you can use it! Just a
+                quick click and voilà!
               </div>
             </div>
             <div
@@ -190,12 +191,12 @@
               aria-labelledby="msg-2-tab"
               tabindex="0"
             >
-              <h1 class="features-text-title pb-3">OTRA COSA</h1>
+              <h1 class="features-text-title pb-3">Faster than Flash!</h1>
               <div class="features-text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                accusantium repudiandae consequatur debitis ratione reiciendis
-                deserunt sint atque non quo, officia quidem fuga quia
-                consequuntur, praesentium eum et ad accusamus.
+                "Get bookmark management at lightning speed with our tool! Move
+                faster than Flash without needing superpowers. Click, save, and
+                navigate effortlessly through your bookmarks without breaking a
+                sweat!"
               </div>
             </div>
             <div
@@ -205,32 +206,30 @@
               aria-labelledby="msg-3-tab"
               tabindex="0"
             >
-              <h1 class="features-text-title pb-3">PAPAFRITA</h1>
+              <h1 class="features-text-title pb-3">
+                All across your devices
+              </h1>
               <div class="features-text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                aperiam cumque officia harum nostrum dolor perferendis, est qui
-                itaque ex quisquam aspernatur, velit consectetur porro odit sunt
-                omnis libero impedit.
+                L"Experience seamless bookmark sharing across all devices with
+                our Easy Shearing feature! Effortlessly sync bookmarks, ensuring
+                they're accessible no matter how many gadgets you own. Organize
+                with ease, wherever you go!"
               </div>
             </div>
           </div>
           <div class="w-100 pt-5 d-flex justify-content-start gap-3">
             <button
               type="button"
-              class="btn btn-primary shadow-lg py-3 font-family px-5 fs-3"
+              class="btn btn-primary shadow-lg py-2 font-family px-3 fs-3"
             >
-              <p class="fs-5 mb-0">Get It on Chrome</p>
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary shadow-lg py-3 font-family px-5 fs-3"
-            >
-              <p class="fs-5 mb-0">Get It on Firefox</p>
+              <p class="fs-5 mb-0">More info</p>
             </button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- SECCIÓN 3 -->
   </body>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>
