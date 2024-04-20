@@ -71,9 +71,11 @@ body {
 
 .nav-link.active {
   color: $selected-tab-color;
+  border-bottom: 4px solid red;
 }
 
 // Estilo para las pestañas no seleccionadas
 .nav-link:not(.active) {
   color: $unselected-tab-color;
 }
+

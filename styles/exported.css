@@ -11332,6 +11332,7 @@ body {
 
 .nav-link.active {
   color: #000;
+  border-bottom: 4px solid red;
 }
 
 .nav-link:not(.active) {
