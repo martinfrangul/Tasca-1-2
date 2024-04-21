@@ -11284,16 +11284,16 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.main-container {
+  max-width: 77rem;
+}
+
 .logo-size {
   width: 10rem;
 }
 
 .hero-size {
   width: 41rem;
-}
-
-.main-container {
-  max-width: 77rem;
 }
 
 .nav-font-size {
@@ -11332,11 +11332,19 @@ body {
 
 .nav-link.active {
   color: #000;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid red !important;
 }
 
 .nav-link:not(.active) {
   color: #585757;
+}
+
+.img-browser {
+  width: 8rem;
+}
+
+.card-container {
+  width: 13rem;
 }
 
 /*# sourceMappingURL=exported.css.map */

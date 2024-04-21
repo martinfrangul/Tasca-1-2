@@ -7,6 +7,8 @@ $tab-color-hover: #333232;
 $border-color: red;
 $border-width: 2px;
 $main-container-size: 77rem;
+$card-container: 13rem;
+$img-browser-size: 8rem;
 
 $theme-colors: (
   "primary": $primary,
@@ -23,16 +25,16 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.main-container {
+  max-width: $main-container-size;
+}
+
 .logo-size {
   width: 10rem;
 }
 
 .hero-size {
   width: 41rem;
-}
-
-.main-container {
-  max-width: $main-container-size;
 }
 
 .nav-font-size {
@@ -71,7 +73,7 @@ body {
 
 .nav-link.active {
   color: $selected-tab-color;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid red !important;
 }
 
 // Estilo para las pestañas no seleccionadas
@@ -79,3 +81,10 @@ body {
   color: $unselected-tab-color;
 }
 
+.img-browser {
+  width: $img-browser-size;
+}
+
+.card-container {
+  width: $card-container;
+}
