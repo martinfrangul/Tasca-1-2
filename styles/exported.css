@@ -11347,4 +11347,13 @@ body {
   width: 13rem;
 }
 
+.card-content {
+  width: 13rem;
+  transition: width 0.3s ease-in-out;
+}
+
+.card-content:hover {
+  width: 18rem;
+}
+
 /*# sourceMappingURL=exported.css.map */
