@@ -11282,6 +11282,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: auto;
 }
 
 .main-container {
@@ -11293,7 +11294,7 @@ body {
 }
 
 .hero-size {
-  width: 41rem;
+  width: 100%;
 }
 
 .nav-font-size {
@@ -11355,6 +11356,12 @@ body {
 
 .card-content:hover {
   width: 18rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .slogan {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=exported.css.map */

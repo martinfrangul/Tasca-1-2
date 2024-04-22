@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1/>
     <title>Tasca 1-2</title>
     <link href="styles/exported.css" rel="stylesheet" />
     <link
@@ -15,7 +15,7 @@
     <!-- SECCIÓN 1 -->
 
     <div class="container-fluid d-flex justify-content-center">
-      <nav class="navbar navbar-expand-md bg-body main-container w-100 py-5 justify-content-end">
+      <nav class="navbar navbar-expand-md main-container w-100 py-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -25,22 +25,20 @@
             />
           </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="side-bar-container d-flex flex-column">
-          <div class="button-hamburguer d-flex justify-content-end">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
             <div
-              class="collapse navbar-sm-collapse d-lg-flex justify-content-end"
+              class="collapse navbar-md-collapse d-md-flex justify-content-end"
               id="navbarSupportedContent"
             >
               <ul class="navbar-nav px-5">
@@ -71,25 +69,22 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
       </nav>
     </div>
     <div class="container-fluid main-container mt-5 pb-5">
       <div class="row">
-        <div class="col-5 d-flex justify-content-center flex-column">
+        <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-lg-start align-items-center flex-column">
           <h1 class="slogan">
-            A Simple Bookmark <br />
-            Manager
+            A Simple Bookmark Manager
           </h1>
-          <div class="slogan-container pt-3">
+          <div class="col-lg-12 col-md-8 col-sm-8 pt-3">
             <p class="slogan-text">
               A simple and clean interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try for
               free
             </p>
           </div>
-          <div class="w-100 pt-3 d-flex justify-content-start gap-3">
+          <div class="w-100 pt-3 d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center align-content-center gap-3">
             <button
               type="button"
               class="btn btn-primary shadow-lg py-2 font-family px-2"
@@ -104,10 +99,10 @@
             </button>
           </div>
         </div>
-        <div class="col-7 d-flex justify-content-end">
+        <div class="col-lg-7 col-md-12 order-1 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center">
           <img
             src="/Recursos/Imagenes/illustration-hero.svg"
-            class="image-fluid hero-size"
+            class="image-fluid mw-75"
             alt="ilustration-tablet"
           />
         </div>

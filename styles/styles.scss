@@ -23,6 +23,7 @@ $theme-colors: (
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    margin: auto;
 }
 
 .main-container {
@@ -34,7 +35,7 @@ body {
 }
 
 .hero-size {
-  width: 41rem;
+  width: 100%;
 }
 
 .nav-font-size {
@@ -99,6 +100,11 @@ body {
   width: 18rem;
 }
 
-// @media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 
-// }
+  .slogan {
+  font-size: 2rem;
+
+  }
+  
+}
