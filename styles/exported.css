@@ -11282,7 +11282,6 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin: auto;
 }
 
 .main-container {
@@ -11323,10 +11322,6 @@ body {
   height: 7rem;
 }
 
-.feat-tab-img {
-  height: 23rem;
-}
-
 .features-text-title {
   font-size: 2rem;
   font-weight: bold;
@@ -11342,15 +11337,15 @@ body {
 }
 
 .img-browser {
-  width: 8rem;
+  width: 100%;
 }
 
 .card-container {
-  width: 13rem;
+  width: 100%;
 }
 
 .card-content {
-  width: 13rem;
+  width: 100%;
   transition: width 0.3s ease-in-out;
 }
 

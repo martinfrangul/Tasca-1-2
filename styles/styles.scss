@@ -7,8 +7,8 @@ $tab-color-hover: #333232;
 $border-color: red;
 $border-width: 2px;
 $main-container-size: 77rem;
-$card-container: 13rem;
-$img-browser-size: 8rem;
+$card-container: 100%;
+$img-browser-size: 100%;
 
 $theme-colors: (
   "primary": $primary,
@@ -23,7 +23,6 @@ $theme-colors: (
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    margin: auto;
 }
 
 .main-container {
@@ -62,10 +61,6 @@ body {
 .features-text-content {
   font-size: 1.1rem;
   height: 7rem;
-}
-
-.feat-tab-img {
-  height: 23rem;
 }
 
 .features-text-title {
