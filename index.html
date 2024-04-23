@@ -67,16 +67,16 @@
         </div>
       </nav>
     </div>
-    <div
-      class="container-fluid d-flex justify-content-sm-center main-container mt-5 pb-5"
-    >
+    <div class="container-fluid d-flex justify-content-sm-center mt-5 pb-5">
       <div class="row">
         <div
-          class="col-lg-5 col-md-12 d-flex justify-content-center align-items-lg-start align-items-center flex-column"
+          class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center align-items-lg-start align-items-center flex-column pb-5 pb-lg-0 ps-lg-5"
         >
-          <h1 class="slogan">A Simple Bookmark Manager</h1>
+          <h1 class="slogan text-center text-lg-start">
+            A Simple Bookmark Manager
+          </h1>
           <div class="col-lg-12 col-md-8 col-sm-8 pt-3">
-            <p class="slogan-text">
+            <p class="slogan-text text-center text-lg-start">
               A simple and clean interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try for
               free
@@ -100,7 +100,7 @@
           </div>
         </div>
         <div
-          class="col-12 col-md-7 order-1 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center"
+          class="col-sm-12 col-md-12 col-lg-7 order-1 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center"
         >
           <img
             src="/Recursos/Imagenes/illustration-hero.svg"
@@ -138,15 +138,17 @@
 
     <!-- NAVS TABS -->
     <div class="container-fluid">
-      <div class="row">
-        <nav>
-          <div
-            class="nav nav-tabs flex-column-md flex-column-sm border-0 nav-lg justify-content-center"
-            id="nav-tab"
-            role="tablist"
-          >
+      <nav
+        class="nav nav-tabs border-0 justify-content-center align-content-center"
+        id="nav-tab"
+        role="tablist"
+      >
+        <div
+          class="row flex-lg-row flex-sm-column flex-md-row justify-content-center align-items-center"
+        >
+          <div class="col-lg-4 col-md-4 col-sm-5">
             <button
-              class="nav-link border-0 active px-4 mx-4"
+              class="nav-link border-0 active px-lg-4 mx-lg-4"
               id="msg-1-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-1"
@@ -157,8 +159,10 @@
             >
               <h3 class="fs-4">Simple Bookmarking</h3>
             </button>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5">
             <button
-              class="nav-link border-0 px-4 mx-4"
+              class="nav-link border-0 px-lg-4 mx-lg-4"
               id="msg-2-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-2"
@@ -169,8 +173,10 @@
             >
               <h3 class="fs-4">Search Speeding</h3>
             </button>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5">
             <button
-              class="nav-link border-0 px-4 mx-4"
+              class="nav-link border-0 px-lg-4 mx-lg-4"
               id="msg-3-tab"
               data-bs-toggle="tab"
               data-bs-target="#msg-3"
@@ -182,8 +188,8 @@
               <h3 class="fs-4">Easy Sharing</h3>
             </button>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
 
     <div class="container-fluid main-container mt-5 pb-5">
@@ -253,7 +259,7 @@
           <div class="w-100 pt-5 d-flex justify-content-start gap-3">
             <button
               type="button"
-              class="btn btn-primary shadow-lg py-2 font-family px-3 fs-3"
+              class="btn btn-primary shadow-lg py-2 font-family px-3 fs-3 d-none d-lg-block"
             >
               <p class="fs-5 mb-0">More info</p>
             </button>
@@ -283,92 +289,95 @@
     </div>
 
     <!-- CARDS -->
-
-    <div
-      class="container-fluid main-container d-flex justify-content-center justify-content-sm-center gap-5"
-    >
-      <!-- CHROME -->
+    <div class="container-fluid">
       <div
-        class="card border-top-0 rounded-3 rounded-top-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center"
+        class="row d-flex justify-content-center justify-content-sm-center gap-5 align-items-center"
       >
-        <div class="card-content">
-          <div class="card-img p-2 d-flex justify-content-center">
-            <img
-              src="Recursos/Imagenes/logo-chrome.svg"
-              class="card border-0 img-fluid img-browser bg-transparent"
-              style="width: 100%"
-              alt="chrome-logo"
-            />
-          </div>
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fw-bold">Add to Chrome</h5>
-            <p class="card-text">Minimum version 6.2</p>
-          </div>
-          <hr />
-          <div class="card-button d-flex justify-content-center">
-            <a
-              href="https://chromewebstore.google.com/?hl=es"
-              target="_blank"
-              class="btn btn-primary"
-              >Add & install extension</a
-            >
+        <!-- CHROME -->
+        <div
+          class="col-8 col-lg-2 card border-top-0 rounded-3 rounded-top-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center"
+        >
+          <div class="card-content">
+            <div class="card-img p-5 d-flex justify-content-center">
+              <img
+                src="Recursos/Imagenes/logo-chrome.svg"
+                class="card border-0 img-fluid img-browser bg-transparent"
+                style="max-width: fit-content"
+                alt="chrome-logo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold">Add to Chrome</h5>
+              <p class="card-text">Minimum version 6.2</p>
+            </div>
+            <hr />
+            <div class="card-button d-flex justify-content-center">
+              <a
+                href="https://chromewebstore.google.com/?hl=es"
+                target="_blank"
+                class="btn btn-primary"
+                >Add & install extension</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <!-- FIREFOX -->
+        <!-- FIREFOX -->
 
-      <div
-        class="card border-top-0 rounded-3 rounded-top-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center"
-      >
-        <div class="card-content">
-          <div class="card-img p-2 d-flex justify-content-center">
-            <img
-              src="Recursos/Imagenes/logo-firefox.svg"
-              class="card border-0 img-fluid img-browser bg-transparent"
-              style="width: 100%"
-              alt="firefox-logo"
-            />
-          </div>
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fw-bold">Add to Firefox</h5>
-            <p class="card-text">Minimum version 6.2</p>
-          </div>
-          <hr />
-          <div class="card-button d-flex justify-content-center">
-            <a
-              href="https://addons.mozilla.org/es/firefox/extensions/"
-              target="_blank"
-              class="btn btn-primary"
-              >Add & install extension</a
-            >
+        <div
+          class="col-8 col-lg-2 card border-top-0 rounded-3 rounded-top-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center"
+        >
+          <div class="card-content">
+            <div class="card-img p-5 d-flex justify-content-center">
+              <img
+                src="Recursos/Imagenes/logo-firefox.svg"
+                class="card border-0 img-fluid img-browser bg-transparent"
+                style="max-width: fit-content"
+                alt="firefox-logo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold">Add to Firefox</h5>
+              <p class="card-text">Minimum version 6.2</p>
+            </div>
+            <hr />
+            <div class="card-button d-flex justify-content-center">
+              <a
+                href="https://addons.mozilla.org/es/firefox/extensions/"
+                target="_blank"
+                class="btn btn-primary"
+                >Add & install extension</a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- OPERA -->
+        <!-- OPERA -->
 
-      <div class="card border-top-0 rounded-3 rounded-top-0 shadow-lg p-1 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center">
-        <div class="card-content">
-          <div class="card-img p-2 d-flex justify-content-center">
-            <img
-              src="Recursos/Imagenes/logo-opera.svg"
-              class="card border-0 img-fluid img-browser bg-transparent"
-              style="width: 100%"
-              alt="opera-logo"
-            />
-          </div>
-          <div class="card-body d-flex flex-column align-items-center">
-            <h5 class="card-title fw-bold">Add to Opera</h5>
-            <p class="card-text">Minimum version 6.2</p>
-          </div>
-          <hr />
-          <div class="card-button d-flex justify-content-center">
-            <a
-              href="https://addons.opera.com/es/extensions/"
-              target="_blank"
-              class="btn btn-primary"
-              >Add & install extension</a
-            >
+        <div
+          class="col-8 col-lg-2 card border-top-0 rounded-3 rounded-top-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-center align-items-center"
+        >
+          <div class="card-content">
+            <div class="card-img p-5 d-flex justify-content-center">
+              <img
+                src="Recursos/Imagenes/logo-opera.svg"
+                class="card border-0 img-fluid img-browser bg-transparent"
+                style="max-width: fit-content"
+                alt="opera-logo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold">Add to Opera</h5>
+              <p class="card-text">Minimum version 6.2</p>
+            </div>
+            <hr />
+            <div class="card-button d-flex justify-content-center">
+              <a
+                href="https://addons.opera.com/es/extensions/"
+                target="_blank"
+                class="btn btn-primary"
+                >Add & install extension</a
+              >
+            </div>
           </div>
         </div>
       </div>
