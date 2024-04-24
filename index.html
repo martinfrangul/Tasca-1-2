@@ -137,60 +137,59 @@
     </div>
 
     <!-- NAVS TABS -->
-    <div class="container-fluid">
-      <nav
-        class="nav nav-tabs border-0 justify-content-center align-content-center"
-        id="nav-tab"
-        role="tablist"
+    <nav
+      class="nav nav-tabs border-0 justify-content-center align-items-center"
+      id="nav-tab"
+      role="tablist"
+    >
+      <div
+        class="row flex-lg-row flex-sm-column flex-md-row justify-content-center align-items-center"
+        style="text-align: -webkit-center"
       >
-        <div
-          class="row flex-lg-row flex-sm-column flex-md-row justify-content-center align-items-center"
-        >
-          <div class="col-lg-4 col-md-4 col-sm-5">
-            <button
-              class="nav-link border-0 active px-lg-4 mx-lg-4"
-              id="msg-1-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#msg-1"
-              type="button"
-              role="tab"
-              aria-controls="msg-1-tab"
-              aria-selected="true"
-            >
-              <h3 class="fs-4">Simple Bookmarking</h3>
-            </button>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-5">
-            <button
-              class="nav-link border-0 px-lg-4 mx-lg-4"
-              id="msg-2-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#msg-2"
-              type="button"
-              role="tab"
-              aria-controls="msg-2-tab"
-              aria-selected="false"
-            >
-              <h3 class="fs-4">Search Speeding</h3>
-            </button>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-5">
-            <button
-              class="nav-link border-0 px-lg-4 mx-lg-4"
-              id="msg-3-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#msg-3"
-              type="button"
-              role="tab"
-              aria-controls="msg-3-tab"
-              aria-selected="false"
-            >
-              <h3 class="fs-4">Easy Sharing</h3>
-            </button>
-          </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-7">
+          <button
+            class="nav-link border-0 active px-lg-4 mx-lg-4"
+            id="msg-1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#msg-1"
+            type="button"
+            role="tab"
+            aria-controls="msg-1-tab"
+            aria-selected="true"
+          >
+            <h3 class="fs-4">Simple Bookmarking</h3>
+          </button>
         </div>
-      </nav>
-    </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-7">
+          <button
+            class="nav-link border-0 px-lg-4 mx-lg-4"
+            id="msg-2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#msg-2"
+            type="button"
+            role="tab"
+            aria-controls="msg-2-tab"
+            aria-selected="false"
+          >
+            <h3 class="fs-4">Search Speeding</h3>
+          </button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-7">
+          <button
+            class="nav-link border-0 px-lg-4 mx-lg-4"
+            id="msg-3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#msg-3"
+            type="button"
+            role="tab"
+            aria-controls="msg-3-tab"
+            aria-selected="false"
+          >
+            <h3 class="fs-4">Easy Sharing</h3>
+          </button>
+        </div>
+      </div>
+    </nav>
 
     <div class="container-fluid main-container mt-5 pb-5">
       <div class="row pt-5">
@@ -390,7 +389,7 @@
     >
       <div class="row">
         <div class="col">
-          <h2 class="features-section-title fs-1">
+          <h2 class="features-section-title fs-1 text-center">
             Frequently Asked Questions
           </h2>
         </div>
@@ -576,24 +575,32 @@
                     </div>
                   </div>
                   <!-- FORM -->
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-6">
-                      <div class="row d-flex justify-content-center">
-                        <div class="col-6">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Input"
-                          />
-                        </div>
-                        <div class="col-2">
-                          <button type="button" class="btn btn-primary">
-                            Enviar
-                          </button>
+                  <form action="" novalidate>
+                    <div class="row d-flex justify-content-center align-items-center flex-lg-row flex-md-row flex-column">
+                      <div class="col-4 col-lg-2 col-md-3 pb-sm-4 pb-md-0 pb-4">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter email"
+                          id="email"
+                          required
+                        />
+                        <div class="valid-feedback"></div>
+                        <div id="feedback" class="invalid-feedback">
+                          Please enter a valid email
                         </div>
                       </div>
+                      <div class="col-lg-1 col-sm-2 col-3">
+                        <button
+                          id="submitBtn"
+                          type="submit"
+                          class="btn btn-danger"
+                        >
+                          Enviar
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -647,6 +654,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      const form = document.querySelector("form");
+      const invalid = document.getElementById("feedback")
+
+      form.addEventListener(
+        "submit",
+        (e) => {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            invalid.classList.add("text-white")
+          }
+          form.classList.add("was-validated");
+          console.log("submit")
+        },
+        false
+      );
+    </script>
   </body>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>

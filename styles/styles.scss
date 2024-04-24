@@ -60,7 +60,6 @@ body {
 
 .features-text-content {
   font-size: 1.1rem;
-  height: 7rem;
 }
 
 .features-text-title {
@@ -88,6 +87,11 @@ body {
 
 .card-content {
   width: $card-container;
+}
+
+/* The color of valid icon */
+div.field-error {
+  background-color: black !important;
 }
 
 
